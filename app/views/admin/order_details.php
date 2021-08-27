@@ -1,5 +1,5 @@
 <?php
-require APPROOT .'/views/inc/header.php' ;
+require APPROOT .'/views/inc/adminHeader.php' ;
 require  'sidebar.php' ;
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ require  'sidebar.php' ;
                 <tbody>
                     <?php foreach ($data as $orders) :?>
                         <tr>
-                            <th><?php echo $orders->item_name; ?></th>
+                            <td><?php echo $orders->item_name; ?></td>
                             <td><?php echo $orders->price; ?></td>
                         </tr>
                     <?php endforeach ;?>
