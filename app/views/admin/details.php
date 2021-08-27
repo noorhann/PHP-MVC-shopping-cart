@@ -1,5 +1,5 @@
 <?php
-require APPROOT .'/views/inc/header.php' ;
+require APPROOT .'/views/inc/adminHeader.php' ;
 require  'sidebar.php' ;
 ?>
 
