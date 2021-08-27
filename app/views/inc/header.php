@@ -32,21 +32,15 @@
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <?php if( $_SESSION['user_type']!='admin' ):?>
-        
-        <?php else : ?>  
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="mr-auto"></div>
             <div class="navbar-nav">
-                <a href="<?php echo URLROOT; ?>cart/index" class="nav-item nav-link active">
+                <a href="<?php echo URLROOT; ?>cart/view_cart" class="nav-item nav-link active">
                     <h5 class="px-5 cart">
                         <i class="fas fa-shopping-cart"></i> Cart          
                     </h5>
                 </a>
             </div>
         </div>
-        <?php endif; ?> 
-
     </nav>
 </header>
