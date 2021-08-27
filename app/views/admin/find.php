@@ -1,5 +1,5 @@
 <?php
-require APPROOT .'/views/inc/header.php' ;
+require APPROOT .'/views/inc/adminHeader.php' ;
 require  'sidebar.php' ;
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,11 @@ require  'sidebar.php' ;
                 <dd><?php echo $data->Description;?> </dd>
 
                 <dt>Image</dt>
-                <dd><img src=<?php echo $data->product_image;?> ></dd>
+                <dd>
+                                    <div>
+                                        <img src=<?php echo $data->product_image;?> class='img-fluid card-img-top'>
+                                    </div> 
+                </dd>
             </dl>
 
             <a href="<?php echo URLROOT; ?>admin/details" >Back To Products List</a>
