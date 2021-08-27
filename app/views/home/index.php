@@ -33,7 +33,7 @@
                                 <h5>
                                     <span class='price'>$<?php echo $product->product_price;?></span>
                                 </h5>
-                                <button type='submit' class='btn btn-warning' name='add'>Add to cart <i class='fas fa-shopping-cart'></i></button>
+                                <a  role="button" type='submit' class='btn btn-warning' name='add' href="<?php echo URLROOT; ?>cart/add/<?php echo $product->id;?>">Add to cart <i class='fas fa-shopping-cart'></i></a>
                                 <input type='hidden' name='product_id' value=<?php echo $product->id;?> >
 
                             </div>
