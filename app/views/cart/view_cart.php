@@ -71,7 +71,7 @@
                             <td><?php echo $items->product_price *$items->qty ; ?></td>
 
                             <td class="actions" data-th="" style="width:10%;">
-                                <a class="btn btn-danger btn-sm" href="<?php echo URLROOT; ?>cart/removeFromCart/<?php echo $items->order_details_id; ?>"><i class="fa fa-trash-o"></i></a>
+                                <a class="btn btn-danger btn-sm" href="<?php echo URLROOT; ?>cart/removeFromCart/<?php echo $items->id; ?>"><i class="fa fa-trash-o"></i></a>
                             </td>
                         </tr>
                         <?php  $sum += $items->product_price *$items->qty ; ?>
@@ -89,10 +89,11 @@
                             
                             <td class="hidden-xs text-center" style="width:10%;">
                                 <strong>Total <?php  echo $sum ?> :</strong>
+
                             </td>
 
                             <td>
-                                <a href="<?php echo URLROOT; ?>orders/checkout/<?php echo $items->order_id?>"  class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a>
+                                <a href="<?php echo URLROOT; ?>orders/checkout"  class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a>
                             </td>
                         </tr>
                     </tfoot>
