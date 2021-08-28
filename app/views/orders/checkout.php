@@ -38,7 +38,7 @@
           <div class="md-form md-outline mt-0">
             <label for="form14">Address</label>
             <input type="text" name="address" id="form14" placeholder="House number and street name" class="form-control" required>
-            <? $_SESSION['address']= $_POST['address']; ?>
+            
           </div>
 
           <div class="md-form md-outline " style="margin-top: 20px;">
@@ -60,7 +60,7 @@
           <div class="md-form md-outline" style="margin-top: 20px;">
             <label for="form18">Phone</label>
             <input  id="form18" name='phone' class="form-control" required>
-            <? $_SESSION['phone']= $_POST['phone']; ?>
+            
 
           </div>
 
