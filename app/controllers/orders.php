@@ -34,9 +34,17 @@ class orders extends controller
         $order =$this->orderModel;
         $order->order_id = $this->cartModel->get_order_id($_SESSION['user_id'])->order_id;
         $order->user_id = $_SESSION['user_id'];
+        /*
+          if(isset($_POST['purchase']))
+          {
+              $order->Address =$_POST['address'];
+              $order->Phone_no =$_POST['phone'];
+
+          }
+        */
         $order->Address = 'Shoubra';
         $order->Phone_no="0123456789";
-        $order->Full_Name = $_SESSION['user_id'];
+        $order->Full_Name = $_SESSION['user_name'];
         $order->create();
     
         $this->cartModel->deleteTemp($_SESSION['user_id']);
