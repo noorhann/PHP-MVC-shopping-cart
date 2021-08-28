@@ -6,7 +6,6 @@ class admin extends controller
     {
         $this->productModel = $this->model('product'); 
         $this->orderModel = $this->model('order');
-        // you should use the "USE" method to inlcude dependencies
     }
 
     public function create()
